@@ -1,49 +1,178 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<title>EC2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+<title>Sakshi Ghadge - Portfolio</title>
 
-body{
-    font-family: Arial, sans-serif;
-    background:#f2f2f2;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-.card{
-    background:white;
-    padding:20px;
-    text-align:center;
-    border-radius:6px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-.card img{
-    width:250px;
-}
-
-h2{
-    color:green;
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="card">
+<header>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-<h2>EC2</h2>
+<section id="home" class="hero">
 
-<img src="sakshi.jpg.jpeg">
+<div class="hero-content animate__animated animate__fadeIn">
 
-<p><b>Sakshi Ghadge</b></p>
+<div class="profile-photo">
+<img src="sakshi.jpg.jpeg" alt="Sakshi Ghadge">
+</div>
+
+<h1>Hi, I'm Sakshi Ghadge</h1>
+
+<p>Web Developer | Python Learner | IoT Enthusiast</p>
+
+<a href="#contact" class="btn">Get in Touch</a>
 
 </div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2 class="animate__animated animate__fadeIn">About Me</h2>
+
+<div class="about-content animate__animated animate__fadeInUp">
+
+<p>
+I am a BE student at Rizvi College of Engineering, Mumbai.
+I am passionate about web development, Python programming,
+and IoT-based projects. I enjoy learning new technologies
+and building creative projects to improve my practical skills.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="skills">
+
+<h2 class="animate__animated animate__fadeIn">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card animate__animated animate__fadeInLeft">
+
+<i class="fas fa-code"></i>
+
+<h3>Web Development</h3>
+
+<p>Basic knowledge of HTML, CSS and JavaScript.</p>
+
+</div>
+
+<div class="skill-card animate__animated animate__fadeInUp">
+
+<i class="fas fa-laptop-code"></i>
+
+<h3>Python Programming</h3>
+
+<p>Learning Python for problem solving and mini projects.</p>
+
+</div>
+
+<div class="skill-card animate__animated animate__fadeInRight">
+
+<i class="fas fa-microchip"></i>
+
+<h3>IoT Projects</h3>
+
+<p>Interested in IoT security systems and smart technologies.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="projects">
+
+<h2 class="animate__animated animate__fadeIn">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card animate__animated animate__fadeInLeft">
+
+<h3>Tamper Detection System</h3>
+
+<p>IoT based system to detect unauthorized access in energy meters.</p>
+
+</div>
+
+<div class="project-card animate__animated animate__fadeInUp">
+
+<h3>Portfolio Website</h3>
+
+<p>Personal portfolio created using HTML, CSS and JavaScript.</p>
+
+</div>
+
+<div class="project-card animate__animated animate__fadeInRight">
+
+<h3>Student Mini Project</h3>
+
+<p>Academic mini project developed during engineering.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="animate__animated animate__fadeIn">Contact Me</h2>
+
+<form id="contact-form" class="animate__animated animate__fadeInUp">
+
+<label for="name">Name:</label> <input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label> <input type="email" id="email" name="email" required>
+
+<label for="message">Message:</label>
+
+<textarea id="message" name="message" required></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Sakshi Ghadge. All rights reserved.</p>
+
+<div class="social-links">
+
+<a href="https://github.com/ghadgesakshi668-ai"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="mailto:ghadgesakshi668@gmail.com"><i class="fas fa-envelope"></i></a>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
